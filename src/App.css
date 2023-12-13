@@ -1,38 +1,21 @@
+:root {
+  --indentation: calc(6vw + 3vh);
+}
+
 .App {
   text-align: center;
+  background-color: #27005D;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Content {
   display: flex;
   flex-direction: column;
+  padding-top: 10vh;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #F5F5F5;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Content h1 {
+  font-size: calc(2vw + 2vh);
+  margin-bottom: 1vw;
 }

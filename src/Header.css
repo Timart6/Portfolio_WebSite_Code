@@ -1,0 +1,254 @@
+@media screen and (min-width: 1621px) {
+    .Header h4, h5 {
+        width: 15vw;
+    }
+    .HeaderButtons {
+        display: flex;
+        min-width: 70vw;
+    }
+    .Hamburger {
+        visibility: hidden;
+    }
+    .ButtonsMenuContainer {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    .Header h4, h5 {
+        width: 18vw;
+    }
+    .HeaderButtons {
+        display: flex;
+        min-width: 66vw;
+    }
+    .Hamburger {
+        visibility: hidden;
+    }
+    .ButtonsMenuContainer {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Header h4, h5 {
+        width: 21vw;
+    }
+    .HeaderButtons {
+        display: flex;
+        min-width: 62vw;
+    }
+    .Hamburger {
+        visibility: hidden;
+    }
+    .ButtonsMenuContainer {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .Header h4, h5 {
+        width: 24vw;
+    }
+    .HeaderButtons {
+        display: flex;
+        min-width: 58vw;
+    }
+    .Hamburger {
+        visibility: hidden;
+    }
+    .ButtonsMenuContainer {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Header h4, h5 {
+        width: 40vw;
+    }
+    .HeaderButtons {
+        display: none;
+    }
+    .Hamburger {
+        visibility: visible;
+    }
+    .ButtonsMenuContainer {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Header h4, h5 {
+        width: 50vw;
+    }
+    .HeaderButtons {
+        display: none;
+    }
+    .Hamburger {
+        visibility: visible;
+    }
+    .ButtonsMenuContainer {
+        visibility: visible;
+    }
+}
+
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    background-color: #15453a;
+    height: 10vh;
+    width: 100%;
+    font-size: calc(1vw + 0.7vh);
+    color: white;
+    position: fixed;
+    z-index: 999;
+}
+
+.HeaderText {
+    align-self: start;
+}
+
+.HeaderText h4, h5{
+    margin: 0;
+    padding-left: 1vw;
+    padding-top: 0.5vh;
+    text-align: start;
+}
+
+.HeaderText h4 {
+    font-size: calc(0.8vw + 2vh);
+}
+
+.HeaderText h5 {
+    font-size: calc(0.5vw + 1.2vh);
+}
+
+
+.HeaderButtons {
+    flex-direction: row;
+    align-items: center;
+}
+
+.HeaderButtons button {
+    align-self: center;
+    margin-left: 4vw;
+    font-size: calc(1.2vw + 1.2vh);
+   /* height: calc(3vh + 3vw); */
+    height: 10vh;
+    width: calc(8vh + 8vw);
+    border: none;
+    cursor: pointer;
+}
+
+.HeaderButtons .unselected {
+    color: #F5F5F5;
+    background-color: transparent;
+}
+
+.HeaderButtons .unselected:hover {
+    background-color: #009674;
+    border: 5px solid #052b23;
+}
+
+.HeaderButtons .selected {
+    background-color: #5de8c8;
+    color: black;
+}
+
+
+.Hamburger {
+    background-color: #AED2FF;
+    color: #0e2431;
+    height: calc(3vw + 3vh);
+    width: calc(3vw + 3vh);
+    align-self: center;
+    margin-left: 35%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Hamburger .line {
+    display: block;
+    height: 15%;
+    width: 90%;
+    border-radius: 2px;
+    background: #0e2431;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.Hamburger.closed .line1 {
+    transition: transform 0.4s ease-in-out;
+}
+
+.Hamburger.closed .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.Hamburger.closed .line3 {
+    transition: transform 0.4s ease-in-out;
+}
+
+
+.Hamburger.opened .line1 {
+    transition: transform 0.4s ease-in-out;
+    transform: rotate(45deg) translate(calc(0.8vw + 0.8vh), calc(0.8vw + 0.8vh));
+}
+
+.Hamburger.opened .line2 {
+    transition: transform 0.2s ease-in-out;
+    transform: scaleY(0);
+}
+
+.Hamburger.opened .line3 {
+    transition: transform 0.4s ease-in-out;
+    transform: rotate(-45deg) translate(calc(0.8vw + 0.8vh), calc(-0.8vw - 0.8vh));
+}
+
+
+.ButtonsMenuContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.ButtonsMenu {
+    background-color: #15453a;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 999;
+    width: 70vw;
+    margin-top: 10vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ButtonsMenu.opened {
+    height: 40vh;
+    transition: height ease-in 0.2s;
+}
+
+.ButtonsMenu.closed {
+    height: 0;
+    transition: height ease-out 0.2s;
+}
+
+
+.ButtonsMenu button {
+    border: none;
+    cursor: pointer;
+    font-size: calc(2vw + 2vh);
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    background: transparent;
+    color: #F5F5F5;
+}
+
+.ButtonsMenu button:hover {
+    background-color: #009674;
+    border: 5px solid #052b23;
+}

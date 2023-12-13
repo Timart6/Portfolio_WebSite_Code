@@ -1,0 +1,76 @@
+@media screen and (min-width: 1621px) {
+    .AboutMe p {
+        max-width: 40vw;
+    }
+    .AboutMe {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    .AboutMe p {
+        max-width: 40vw;
+    }
+    .AboutMe {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .AboutMe p {
+        max-width: 45vw;
+    }
+    .AboutMe {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .AboutMe p {
+        max-width: 60vw;
+        margin-left: 3vw;
+    }
+    .AboutMe {
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .AboutMe p {
+        max-width: 70vw;
+        margin-left: 3vw;
+    }
+    .AboutMe {
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .AboutMe p {
+        max-width: 80vw;
+        margin-left: 3vw;
+    }
+    .AboutMe {
+        align-items: start;
+    }
+}
+
+.AboutMe {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: var(--indentation);
+}
+
+.AboutMe p{
+    text-align: start;
+    word-wrap: break-word;
+    font-size: calc(1vw + 0.7vh);
+    font-weight: 600;
+}
+
+.Photo {
+    max-width: calc(18vw + 9vh);
+    max-height: calc(18vw + 9vh);
+    margin-left: 3vw;
+    margin-right: 3vw;
+}

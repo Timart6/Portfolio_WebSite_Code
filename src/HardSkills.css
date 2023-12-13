@@ -1,0 +1,80 @@
+@media screen and (min-width: 1621px) {
+    .Hard {
+        width: 55vw;
+        height: 21vw;
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    .Hard {
+        width: 64vw;
+        height: 23vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Hard {
+        width: 70vw;
+        height: 26vw;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .Hard {
+        width: 76vw;
+        height: 29vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Hard {
+        width: 82vw;
+        height: 32vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Hard {
+        width: 88vw;
+        height: 35vw;
+    }
+}
+
+.Hard {
+    display: flex;
+    flex-direction: row;
+    background-color: #FF5F9E;
+    color: black;
+    font-size: calc(1.2vw + 0.6vh);
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: start;
+    margin-top: 2vw;
+    margin-left: 7.5vw;
+}
+
+
+.SkillsList {
+    display: flex;
+    flex-direction: column;
+}
+
+.SkillsHead {
+    display: flex;
+    font-weight: 700;
+    font-size: calc(1vw + 0.7vh);
+    margin-bottom: calc(0.6vw + 0.4vh);
+    align-items: start;
+    margin-left: 2vw;
+}
+
+.Skill {
+    margin: 0 calc(3vw + 2vh) 0 calc(5vw + 2vh);
+}
+
+.SkillsHead img {
+    width: calc(1.5vw + 1.5vh);
+    height: calc(1.5vw + 1.5vh);
+    margin-right: 1vw;
+}

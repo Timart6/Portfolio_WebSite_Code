@@ -1,0 +1,85 @@
+.Contacts {
+    display: flex;
+    flex-direction: row;
+    height: calc(2vw + 8vh);
+    align-items: center;
+    justify-content: center;
+}
+
+.ContactsContainer {
+    width: 100%;
+    background-color: #15453a;
+}
+
+.ContactsContainer h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: calc(2vw + 1.2vh);
+    color: #F5F5F5;
+}
+
+
+@media screen and (min-width: 1621px) {
+    .ContactRow {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    .ContactRow {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .ContactRow {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .ContactRow {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ContactRow {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ContactRow {
+        flex-direction: column;
+    }
+}
+
+
+.ContactRow {
+    display: flex;
+    width: 30vw;
+    box-sizing: border-box;
+    justify-content: center;
+    font-size: calc(1.2vw + 2vh);
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 2vh;
+    color: #5de8c8;
+}
+
+.ContactRow p {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.ContactRow a {
+    color: #5de8c8;
+    text-decoration: unset;
+}
+
+.ContactRow img {
+    width: calc(3.5vw + 3.5vh);
+    height: calc(3.5vw + 3.5vh);
+}

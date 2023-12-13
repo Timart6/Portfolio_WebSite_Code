@@ -1,0 +1,109 @@
+@media screen and (min-width: 1621px) {
+    .Skills {
+        width: 66vw;
+    }
+    .SkillsPanel.hard {
+        margin-right: 125vw;
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    .Skills {
+        width: 75vw;
+    }
+    .SkillsPanel.hard {
+        margin-right: 142vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Skills {
+        width: 81vw;
+    }
+    .SkillsPanel.hard {
+        margin-right: 155vw;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .Skills {
+        width: 87vw;
+    }
+    .SkillsPanel.hard {
+        margin-right: 167vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Skills {
+        width: 93vw;
+    }
+    .SkillsPanel.hard {
+        margin-right: 178vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Skills {
+        width: 99vw;
+    }
+    .SkillsPanel.hard {
+        margin-right: 191vw;
+    }
+}
+
+
+.Skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: var(--indentation);
+    overflow: hidden;
+}
+
+
+.SkillsTypeButton {
+    margin: 3vw 3vh 3vw 3vh;
+    font-size: calc(1.5vw + 2vh);
+}
+
+.SkillsTypeButton.soft.unselected {
+    color: #F5F5F5;
+    cursor: pointer;
+}
+.SkillsTypeButton.soft.unselected:hover {
+    color: #4b9fe3;
+}
+.SkillsTypeButton.soft.selected {
+    color: #a1d5ff;
+    text-decoration: underline;
+}
+
+.SkillsTypeButton.hard.unselected {
+    color: #F5F5F5;
+    cursor: pointer;
+}
+.SkillsTypeButton.hard.unselected:hover {
+    color: #e0093f;
+}
+.SkillsTypeButton.hard.selected {
+    color: #f24171;
+    text-decoration: underline;
+}
+
+
+.SkillsPanel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.SkillsPanel.soft {
+    transition: margin-right ease-out 0.3s;
+    margin-left: 0;
+}
+
+.SkillsPanel.hard {
+    transition: margin-right ease-out 0.3s;
+}

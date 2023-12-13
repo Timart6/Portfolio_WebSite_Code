@@ -1,0 +1,76 @@
+@media screen and (min-width: 1621px) {
+    .Soft {
+        width: 55vw;
+        height: 21vw;
+        margin-left: 62.5vw;
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    .Soft {
+        width: 64vw;
+        height: 23vw;
+        margin-left: 71.5vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Soft {
+        width: 70vw;
+        height: 26vw;
+        margin-left: 77.5vw;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .Soft {
+        width: 76vw;
+        height: 29vw;
+        margin-left: 83.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Soft {
+        width: 82vw;
+        height: 32vw;
+        margin-left: 89.5vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Soft {
+        width: 88vw;
+        height: 35vw;
+        margin-left: 95.5vw;
+    }
+}
+
+
+.Soft {
+    background-color: #AED2FF;
+    color: black;
+    font-weight: 800;
+    font-size: calc(1.2vw + 0.6vh);
+    align-self: center;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.Soft pre{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.Soft .color1 {
+    color: #7565cf;
+}
+.Soft .color2 {
+    color: #403485;
+}
+.Soft .color3 {
+    color: #291499;
+}
+.Soft .color4 {
+    color: #160b4f;
+}

@@ -1,0 +1,76 @@
+.ExperiencePanel {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin-bottom: var(--indentation);
+    margin-top: 2vh;
+}
+
+.WorkPlaceButton {
+    border: 2px solid #5de8c8;
+    background-color: #071952;
+    color: #5de8c8;
+    border-radius: 50%;
+    width: calc(2.2vw + 2.2vh);
+    height: calc(2.2vw + 2.2vh);
+    font-size: calc(1.5vw + 1.5vh);
+    padding-top: calc(0.3vw + 0.3vh);
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.WorkPlaceButton:hover {
+    background-color: #030f36;
+}
+
+
+
+@media screen and (min-width: 1621px) {
+    .WorkPlacesContainer {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    .WorkPlacesContainer {
+        width: 74vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .WorkPlacesContainer {
+        width: 76vw;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .WorkPlacesContainer {
+        width: 78vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .WorkPlacesContainer {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .WorkPlacesContainer {
+        width: 84vw;
+    }
+}
+
+.WorkPlacesContainer {
+    overflow: hidden;
+}
+
+.WorkPlaces {
+    display: flex;
+    flex-direction: row;
+    transition: translate;
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}

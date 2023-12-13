@@ -1,0 +1,192 @@
+@media screen and (min-width: 1621px) {
+    .WorkPlace {
+        min-width: 60vw;
+        margin-left: 5vw;
+    }
+    .AboutWork {
+        text-align: start;
+    }
+    :root {
+        --slideDistance: 65.4vw;
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    .WorkPlace {
+        min-width: 64vw;
+        margin-left: 5vw;
+    }
+    .AboutWork {
+        text-align: start;
+    }
+    :root {
+        --slideDistance: 69.4vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .WorkPlace {
+        min-width: 68vw;
+        margin-left: 4vw;
+    }
+    .AboutWork {
+        text-align: start;
+    }
+    :root {
+        --slideDistance: 73.4vw;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .WorkPlace {
+        min-width: 72vw;
+        margin-left: 3vw;
+    }
+    .AboutWork {
+        text-align: start;
+    }
+    :root {
+        --slideDistance: 75.6vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .WorkPlace {
+        min-width: 76vw;
+        margin-left: 2vw;
+    }
+    .AboutWork {
+        text-align: center;
+    }
+    :root {
+        --slideDistance: 78.6vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .WorkPlace {
+        min-width: 80vw;
+        margin-left: 2vw;
+    }
+    .AboutWork {
+        text-align: center;
+    }
+    :root {
+        --slideDistance: 82.6vw;
+    }
+}
+
+
+
+.WorkPlace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    border: 0.2vw solid #AED2FF;
+}
+
+.Company {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: calc(1.5vw + 1vh);
+}
+
+.Company h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: calc(0.5vw + 0.3vh);
+}
+
+.Company img {
+    width: calc(3vw + 2vh);
+    height: calc(3vw + 2vh);
+}
+
+.WorkPlace h3 {
+    font-weight: 400;
+    font-size: calc(1.5vw + 0.7vh);
+    margin-top: 0;
+}
+
+.AboutWork {
+    padding-left: 1vw;
+    font-weight: 500;
+    font-size: calc(1.5vw + 0.7vh);
+    margin-bottom: 2vw;
+    margin-top: 0;
+}
+
+
+
+.FeedbackButton {
+    background-color: #5de8c8;
+    color: black;
+    border: #052b23 solid 3px;
+    border-radius: 0.5vw 0.5vw 0 0;
+    font-weight: 600;
+    font-size: calc(2vw + 1.3vh);
+    width: calc(30vw + 20vh);
+    height: calc(2vw + 4vh);
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+.FeedbackButton:hover {
+    background-color: #009674;
+    color: #F5F5F5;
+}
+
+
+.Feedback {
+    width: calc(27vw + 18vh);
+    margin-bottom: 2vh;
+}
+
+.Feedback.hidden{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height ease-out 0.2s;
+}
+
+.Feedback.opened {
+    max-height: 40vh;
+    overflow: hidden;
+    transition: max-height ease-in 0.2s;
+}
+
+
+.Comment {
+    max-width: 100%;
+    margin-top: calc(0.7vw + 0.7vh);
+}
+
+.Comment p {
+    font-weight: 400;
+    text-align: start;
+    margin-left: calc(3.6vw + 3.4vh);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.CommentHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.CommentHeader h4 {
+    font-size: 20px;
+    padding-left: calc(0.6vw + 0.4vh);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.CommentHeader img {
+    width: calc(3vw + 3vh);
+    height: calc(3vw + 3vh);
+    border: 2px solid #5de8c8;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
